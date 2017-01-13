@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>Get the height</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+      <table>
+        <tr>
+          <td rowspan="3">
+            <div id="map"></div></td>
+          <th colspan="3" class="heading">
+            Введите координаты или кликните на карте
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="latitude" required placeholder="Широта" value="">
+          </td>
+          <td>
+            <input type="text" id="longitude" required placeholder="Долгота" value="">
+          </td>
+          <td>
+            <input type="submit" id="btn" value="результат">
+          </td>
+        </tr>
+        <tr>
+          <td class="result" colspan="3">
+            <div id="result"> Ваш результат </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDadMEq7xaJHc5KRJFstidkqdN7yUE0zcA&callback=initMap&language=uk&region=UK">
+    </script>
+</body>
+</html>
